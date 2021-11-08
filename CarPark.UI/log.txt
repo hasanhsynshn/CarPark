@@ -257,3 +257,211 @@ System.InvalidOperationException: The layout view '~V/iews/Shared/_Layout.cshtml
 2021-11-07 15:55:57.455 +03:00 [INF] Executed action CarPark.UI.Controllers.Contact.Index (CarPark.UI) in 21.8621ms
 2021-11-07 15:55:57.455 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.Contact.Index (CarPark.UI)'
 2021-11-07 15:55:57.455 +03:00 [INF] Request finished in 28.9689ms 200 text/html; charset=utf-8
+2021-11-08 23:10:43.431 +03:00 [INF] User profile is available. Using 'C:\Users\hasan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 23:10:44.436 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 23:10:44.437 +03:00 [INF] Hosting environment: Development
+2021-11-08 23:10:44.437 +03:00 [INF] Content root path: C:\Users\hasan\source\repos\CarPark\CarPark.UI
+2021-11-08 23:10:44.479 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/  
+2021-11-08 23:10:44.526 +03:00 [INF] Executing endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:10:44.753 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:10:44.761 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'CarPark.UI.Controllers.HomeController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerProvider.OnProvidersExecuting(ActionInvokerProviderContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionInvokerFactory.CreateInvoker(ActionContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ActionEndpointFactory.<>c__DisplayClass7_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-11-08 23:10:44.884 +03:00 [INF] Request finished in 407.4839ms 500 text/html; charset=utf-8
+2021-11-08 23:11:41.516 +03:00 [INF] User profile is available. Using 'C:\Users\hasan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 23:11:42.180 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 23:11:42.180 +03:00 [INF] Hosting environment: Development
+2021-11-08 23:11:42.180 +03:00 [INF] Content root path: C:\Users\hasan\source\repos\CarPark\CarPark.UI
+2021-11-08 23:11:42.227 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/  
+2021-11-08 23:11:42.272 +03:00 [INF] Executing endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:11:42.351 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.UI.Controllers.HomeController (CarPark.UI).
+2021-11-08 23:11:42.361 +03:00 [INF] Executed action CarPark.UI.Controllers.HomeController.Index (CarPark.UI) in 4.0983ms
+2021-11-08 23:11:42.365 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:11:42.369 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MongoDB.Driver.MongoClient' while attempting to activate 'CarPark.UI.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-11-08 23:11:42.469 +03:00 [INF] Request finished in 246.8698ms 500 text/html; charset=utf-8
+2021-11-08 23:14:11.617 +03:00 [INF] User profile is available. Using 'C:\Users\hasan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 23:14:12.335 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 23:14:12.336 +03:00 [INF] Hosting environment: Development
+2021-11-08 23:14:12.336 +03:00 [INF] Content root path: C:\Users\hasan\source\repos\CarPark\CarPark.UI
+2021-11-08 23:14:12.410 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/  
+2021-11-08 23:14:12.506 +03:00 [INF] Executing endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:14:12.695 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.UI.Controllers.HomeController (CarPark.UI).
+2021-11-08 23:14:12.727 +03:00 [INF] Executed action CarPark.UI.Controllers.HomeController.Index (CarPark.UI) in 16.4447ms
+2021-11-08 23:14:12.733 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:14:12.745 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MongoDB.Driver.MongoClient' while attempting to activate 'CarPark.UI.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-11-08 23:14:12.908 +03:00 [INF] Request finished in 516.441ms 500 text/html; charset=utf-8
+2021-11-08 23:14:42.526 +03:00 [INF] User profile is available. Using 'C:\Users\hasan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 23:14:43.237 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 23:14:43.237 +03:00 [INF] Hosting environment: Development
+2021-11-08 23:14:43.237 +03:00 [INF] Content root path: C:\Users\hasan\source\repos\CarPark\CarPark.UI
+2021-11-08 23:14:43.274 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/  
+2021-11-08 23:14:43.320 +03:00 [INF] Executing endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:14:43.390 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.UI.Controllers.HomeController (CarPark.UI).
+2021-11-08 23:14:43.401 +03:00 [INF] Executed action CarPark.UI.Controllers.HomeController.Index (CarPark.UI) in 3.4778ms
+2021-11-08 23:14:43.404 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:14:43.408 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MongoDB.Driver.MongoClient' while attempting to activate 'CarPark.UI.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-11-08 23:14:43.526 +03:00 [INF] Request finished in 254.6139ms 500 text/html; charset=utf-8
+2021-11-08 23:16:05.488 +03:00 [INF] User profile is available. Using 'C:\Users\hasan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 23:16:06.232 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 23:16:06.232 +03:00 [INF] Hosting environment: Development
+2021-11-08 23:16:06.232 +03:00 [INF] Content root path: C:\Users\hasan\source\repos\CarPark\CarPark.UI
+2021-11-08 23:16:06.357 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/  
+2021-11-08 23:16:06.423 +03:00 [INF] Executing endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:16:06.561 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.UI.Controllers.HomeController (CarPark.UI).
+2021-11-08 23:16:06.576 +03:00 [INF] Executed action CarPark.UI.Controllers.HomeController.Index (CarPark.UI) in 6.9546ms
+2021-11-08 23:16:06.582 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:16:06.588 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MongoDB.Driver.MongoClient' while attempting to activate 'CarPark.UI.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-11-08 23:16:06.719 +03:00 [INF] Request finished in 367.6397ms 500 text/html; charset=utf-8
+2021-11-08 23:19:40.758 +03:00 [INF] User profile is available. Using 'C:\Users\hasan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 23:19:41.520 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 23:19:41.520 +03:00 [INF] Hosting environment: Development
+2021-11-08 23:19:41.520 +03:00 [INF] Content root path: C:\Users\hasan\source\repos\CarPark\CarPark.UI
+2021-11-08 23:19:41.569 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/  
+2021-11-08 23:19:41.628 +03:00 [INF] Executing endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:19:41.705 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.UI.Controllers.HomeController (CarPark.UI).
+2021-11-08 23:19:41.716 +03:00 [INF] Executed action CarPark.UI.Controllers.HomeController.Index (CarPark.UI) in 4.0111ms
+2021-11-08 23:19:41.719 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:19:41.722 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'MongoDB.Driver.MongoClient' while attempting to activate 'CarPark.UI.Controllers.HomeController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-11-08 23:19:41.852 +03:00 [INF] Request finished in 287.055ms 500 text/html; charset=utf-8
+2021-11-08 23:20:58.284 +03:00 [INF] User profile is available. Using 'C:\Users\hasan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 23:20:58.910 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 23:20:58.910 +03:00 [INF] Hosting environment: Development
+2021-11-08 23:20:58.910 +03:00 [INF] Content root path: C:\Users\hasan\source\repos\CarPark\CarPark.UI
+2021-11-08 23:20:58.944 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/  
+2021-11-08 23:20:58.987 +03:00 [INF] Executing endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:20:59.038 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.UI.Controllers.HomeController (CarPark.UI).
+2021-11-08 23:21:10.467 +03:00 [INF] Executing ViewResult, running view Index.
+2021-11-08 23:21:10.774 +03:00 [INF] Executed ViewResult - view Index executed in 378.7802ms.
+2021-11-08 23:21:10.778 +03:00 [INF] Executed action CarPark.UI.Controllers.HomeController.Index (CarPark.UI) in 11739.7742ms
+2021-11-08 23:21:10.779 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:21:10.784 +03:00 [INF] Request finished in 11842.3868ms 200 text/html; charset=utf-8
+2021-11-08 23:21:10.900 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/lib/bootstrap/dist/css/bootstrap.min.css  
+2021-11-08 23:21:10.900 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/css/site.css  
+2021-11-08 23:21:10.901 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/lib/jquery/dist/jquery.min.js  
+2021-11-08 23:21:10.908 +03:00 [INF] The file /lib/bootstrap/dist/css/bootstrap.min.css was not modified
+2021-11-08 23:21:10.908 +03:00 [INF] The file /lib/jquery/dist/jquery.min.js was not modified
+2021-11-08 23:21:10.908 +03:00 [INF] The file /css/site.css was not modified
+2021-11-08 23:21:10.911 +03:00 [INF] Request finished in 11.4571ms 304 text/css
+2021-11-08 23:21:10.911 +03:00 [INF] Request finished in 11.4169ms 304 text/css
+2021-11-08 23:21:10.911 +03:00 [INF] Request finished in 10.2406ms 304 application/javascript
+2021-11-08 23:21:10.991 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/lib/bootstrap/dist/js/bootstrap.bundle.min.js  
+2021-11-08 23:21:10.991 +03:00 [INF] The file /lib/bootstrap/dist/js/bootstrap.bundle.min.js was not modified
+2021-11-08 23:21:10.992 +03:00 [INF] Request finished in 1.0089ms 304 application/javascript
+2021-11-08 23:21:10.993 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2021-11-08 23:21:10.993 +03:00 [INF] The file /js/site.js was not modified
+2021-11-08 23:21:10.994 +03:00 [INF] Request finished in 1.0018ms 304 application/javascript
+2021-11-08 23:29:55.055 +03:00 [INF] User profile is available. Using 'C:\Users\hasan\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-11-08 23:29:55.895 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-11-08 23:29:55.905 +03:00 [INF] Hosting environment: Development
+2021-11-08 23:29:55.906 +03:00 [INF] Content root path: C:\Users\hasan\source\repos\CarPark\CarPark.UI
+2021-11-08 23:29:55.930 +03:00 [INF] Request starting HTTP/2.0 GET https://localhost:44323/  
+2021-11-08 23:29:55.965 +03:00 [INF] Executing endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:29:56.013 +03:00 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller CarPark.UI.Controllers.HomeController (CarPark.UI).
+2021-11-08 23:30:07.286 +03:00 [INF] Executing ViewResult, running view Index.
+2021-11-08 23:30:07.425 +03:00 [INF] Executed ViewResult - view Index executed in 192.1847ms.
+2021-11-08 23:30:07.427 +03:00 [INF] Executed action CarPark.UI.Controllers.HomeController.Index (CarPark.UI) in 11413.7215ms
+2021-11-08 23:30:07.429 +03:00 [INF] Executed endpoint 'CarPark.UI.Controllers.HomeController.Index (CarPark.UI)'
+2021-11-08 23:30:07.435 +03:00 [INF] Request finished in 11507.4958ms 200 text/html; charset=utf-8
